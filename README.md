@@ -3,7 +3,7 @@
 Feel free to take the code and copy it and modify it and use it however you like. (If you really want a licence, see [WTFPL](http://www.wtfpl.net/txt/copying/))
 
 ### Credits: 
- * [JBT markdown editor](https://github.com/jbt/markdown-editor) was wholly forked by 18F. THANK YOU [JBT](https://github.com/jbt).
+ * [JBT markdown editor](https://github.com/jbt/markdown-editor) was wholly forked by 18F. **Thank you [JBT](https://github.com/jbt)**.
 
 JBT also noted these credits:
  * [Mr. Doob code editor](http://mrdoob.com/projects/code-editor/), which provided inspiration and implementation hints to JBT.
