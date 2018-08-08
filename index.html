@@ -20,6 +20,9 @@
   <link rel="stylesheet" href="base16-light.css">
   <link rel="stylesheet" href="codemirror/lib/codemirror.css">
   <link rel="stylesheet" href="default.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:200,300,400,500,600,700,800" rel="stylesheet">
+  <link rel="stylesheet" href="isomer.css">
+  <link rel="stylesheet" href="isomer-custom.css">
   <style>
     body {margin: 0;}
 
@@ -138,89 +141,78 @@
         padding-left: 10px;
       }
     }
-
-    .cm-header-1 { font-size: 2em; }
-    .cm-header-2 { font-size: 1.75em; }
-    .cm-header-3 { font-size: 1.5em; }
-    .cm-header-4 { font-size: 1.3em; }
-    .cm-header-5 { font-size: 1.2em; }
-    .cm-header-6 { font-size: 1.15em; }
-
-    .cm-quote { color: #90a959; font-style: italic; }
-
-    .view #in {
-      display: none;
-    }
-    .view #out {
-      left: 0;
-      padding-left: 10px;
-    }
-
-    a{ color: #0645ad; text-decoration:none;}
-    a:visited{ color: #0b0080; }
-    a:hover{ color: #06e; }
-    a:active{ color:#faa700; }
-    a:focus{ outline: thin dotted; }
-    a:hover, a:active{ outline: 0; }
-
-    p{margin:1em 0;}
-
-    img{max-width:100%;}
-
-    h1,h2,h3,h4,h5,h6{font-weight:normal;color:#111;line-height:1em;}
-    h4,h5,h6{ font-weight: bold; }
-    h1{ font-size:2.5em; }
-    h2{ font-size:2em; border-bottom:1px solid silver; padding-bottom: 5px; }
-    h3{ font-size:1.5em; }
-    h4{ font-size:1.2em; }
-    h5{ font-size:1em; }
-    h6{ font-size:0.9em; }
-
-    blockquote{color:#666666;margin:0;padding-left: 3em;border-left: 0.5em #EEE solid;}
-    hr { display: block; height: 2px; border: 0; border-top: 1px solid #aaa;border-bottom: 1px solid #eee; margin: 1em 0; padding: 0; }
-
-    pre, code{
-      color: #000;
-      font-family:Consolas, "Liberation Mono", Menlo, Courier, monospace;
-      font-size: 0.94em; /* 0.94 = 0.88 + (1.00 - 0.88) / 2 */
-      border-radius:3px;
-      background-color: #F8F8F8;
-      border: 1px solid #CCC;
-    }
-    pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; padding: 5px;}
-    pre code { border: 0px !important; background: transparent !important; line-height: 1.3em; }
-    code { padding: 0 3px 0 3px; }
-    sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
-    sup { top: -0.5em; }
-    sub { bottom: -0.25em; }
-    ul, ol { margin: 1em 0; padding: 0 0 0 2em; }
-    li p:last-child { margin:0 }
-    dd { margin: 0 0 0 2em; }
-    img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
-    table { border-collapse: collapse; border-spacing: 0; }
-    td, th { vertical-align: top; padding: 4px 10px; border: 1px solid #bbb; }
-    tr:nth-child(even) td, tr:nth-child(even) th { background: #eee; }
   </style>
 </head>
 <body>
   <div id="in"><form><textarea id="code">
 
-## Federalist Markdown Helper
+## **Isomer Markdown Helper**
 
 #### Copy and paste your markdown on the left side then edit here!
 
-This page shows markdown formatting examples and allows you to easily experiment. For example, here are **bolded text**, _italicized text_, `monospace`, and a numbered list:
-     
- 1. Lists
- 2. Are
- 3. Easy!
+---
 
+You can write in six different font sizes:
+# Header 1
+## Header 2
+### Header 3
+#### Header 4
+##### Header 5
+###### Header 6
+
+You can also **bold** and *italicize* words. And you can even *combine **both** in **the same** line*.
+
+~~Here's a strikethrough.~~
+
+#### **You can also combine bold/italics/strikethrough with headers!**
+
+> Add blockquotes to make your text stand out
+
+#### **Tables in markdown (for simple tables)**
     
 | Header 1            | Header 2     | Header 3     |
 |---------------------|--------------|--------------|
 | Markdown tables     |              |              |
 |                     | are a bit    |              |
 |                     |              | trickier.    |
+
+#### **Tables in HTML (for more tricky tables)**
+
+I highly recommend using a table generator such as [https://www.tablesgenerator.com/html_tables](https://www.tablesgenerator.com/html_tables)
+
+Horizontal tables
+<table class="table-h">
+  <tr>
+    <td rowspan="3">Stuff about Singapore</td>
+    <td>Singapore population size</td>
+    <td>5.6 million (2016)</td>
+  </tr>
+  <tr>
+    <td>Land mass of Singapore</td>
+    <td>719.9 km²</td>
+  </tr>
+  <tr>
+    <td>Other information</td>
+    <td><b>Ethnic groups</b> <br>74.3% Chinese <br>13.3% Malay <br> 9.1% Indian <br><br> <b>3.2% Others</b></td>
+  </tr>
+</table>
+
+
+Vertical tables
+<table class="table-v">
+  <tr>
+    <td>Singapore population size</td>
+    <td>5.6 million (2016)</td>
+  </tr>
+  <tr>
+    <td>Land mass of Singapore</td>
+    <td>719.9 km²</td>
+  </tr>
+  <tr>
+    <td>Other information</td>
+    <td><b>Ethnic groups</b> <br>74.3% Chinese <br>13.3% Malay <br> 9.1% Indian <br><br> <b>3.2% Others</b></td>
+  </tr>
+</table>
     
 More features and a bullet/subbullet list example:
     
@@ -229,14 +221,25 @@ More features and a bullet/subbullet list example:
    * Drag and drop a file into this page to load it
    * File contents are saved in the URL so you can share easily
 
+
+Here's how to create [a link](http://github.com); and here's how to access [files](https://isomerpages.github.io/isomerpages-template/assets/github-setup.pdf).
+
+Here's an [email link action](mailto:email@gmail.com)
+
+Open links in [a new tab](http://github.com){:target="_blank"}
+
+![Alternative text for screen readers](https://isomerpages.github.io/isomerpages-template/images/contact-us.png)
+
     
- This site's source is [on GitHub](https://github.com/18f/markdown-editor) where you can [file issues or questions](https://github.com/18F/markdown-editor/issues/new). The original [code](https://github.com/jbt/markdown-editor) was authored by James Taylor :uk:, and is now maintained by the [Federalist](https://federalist.18f.gov) team. :us:
+This site's source is [on GitHub](https://github.com/isomerpages/markdown-editor) where you can [file issues or questions](https://github.com/isomerpages/markdown-editor/issues/new). 
+
+This project was forked from the [Federalist team's repo](https://github.com/18F/markdown-editor) team, which was modified from James Taylor's original [code](https://github.com/jbt/markdown-editor).
 
 ---
-If you don't see two gray and white halves of the page, widen your browser window. Try making an edit right now on the left side, and good luck!
+If you don't see two gray and white halves of the page, widen your browser window. Try making an edit on the left side, and good luck!
     
     </textarea></form></div>
-  <div id="out"></div>
+  <div id="out" class="content"></div>
   <div id="menu">
     <span>Save As</span>
     <div id="saveas-markdown">
