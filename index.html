@@ -146,44 +146,91 @@
 <body>
   <div id="in"><form><textarea id="code">
 
-## **Isomer Markdown Helper**
+## **Welcome to Isomer Markdown Editor**
 
-#### Copy and paste your markdown on the left side then edit here!
+#### Copy and paste your markdown from Github to the left side and start editing!
 
 ---
 
-You can write in six different font sizes:
-# Header 1
-## Header 2
-### Header 3
-#### Header 4
-##### Header 5
-###### Header 6
+## **Section 1:  Font size for headers**
+You can choose six different font sizes for your header:
+###### Header Size 1
+##### Header Size 2
+#### Header Size 3
+### Header Size 4
+## Header Size 5
+# Header Size 6
 
-You can also **bold** and *italicize* words. And you can even *combine **both** in **the same** line*.
+---
 
-~~Here's a strikethrough.~~
 
-#### **You can also combine bold/italics/strikethrough with headers!**
+## **Section 2:  Formatting text**
+You can  **bold** and *italicize* your words. And you can even *combine **both** in **the same** line*. 
 
-> Add blockquotes to make your text stand out
+Here's how you can ~~strikethrough.~~ your word.
 
+#### **You can also combine bold/italics/strikethrough formatting for headers!**
+
+> Add blockquotes to make your text stand out.
+
+---
+
+## **Section 3: Formatting text with a list**
+You can create bullet/subbullet list like the example below:
+ * Item 1
+ * Item 2
+   * Item 2.1
+   * Item 2.2
+
+Or you can also create number list like the example below:
+1. Item A
+2. Item B
+3. Item C
+4. Item D
+5. Item E
+
+---
+
+
+## **Section 4: Creating links**
+This is how you can create a  [website link](http://github.com)
+
+Here's how to create a file download link [files](https://isomerpages.github.io/isomerpages-template/assets/github-setup.pdf)
+
+Here's how to open a website link in [a new tab](http://github.com){:target="_blank"}
+
+Here's a call to action email link [email link action](mailto:email@gmail.com)
+
+---
+
+
+## **Section 5: Adding images**
+
+You can add images using the markdown below. Remember to change the file path to your repo directory.
+![Alternative text for screen readers](https://isomerpages.github.io/isomerpages-template/images/contact-us.png)
+---
+
+
+## **Section 6: Formatting simple tables**
 #### **Tables in markdown (for simple tables)**
     
-| Header 1            | Header 2     | Header 3     |
-|---------------------|--------------|--------------|
-| Markdown tables     |              |              |
-|                     | are a bit    |              |
-|                     |              | trickier.    |
+| Header 1           	 		 | Header 2       | Header 3       |
+|-------------------------|----------------|----------------|
+| Markdown tables     |              			   |             			 	 |
+|                    						  | are a bit    	  |             			    |
+|                     						  |              				| trickier    		 |
 
-#### **Tables in HTML (for more tricky tables)**
 
-I highly recommend using a table generator such as [https://www.tablesgenerator.com/html_tables](https://www.tablesgenerator.com/html_tables)
+## **Section 7: Formatting complex tables**
+#### **Tables in HTML (for tables with merge cells)**
 
-Horizontal tables
+Dealing with HTML table can be quite  complicated.
+> [We recommend you to generate the table by clicking on this link and paste the generated table over here](https://www.tablesgenerator.com/html_tables) 
+
+**Horizontal tables**
 <table class="table-h">
   <tr>
-    <td rowspan="3">Stuff about Singapore</td>
+    <td rowspan="2">Stuff about Singapore</td>
     <td>Singapore population size</td>
     <td>5.6 million (2016)</td>
   </tr>
@@ -192,13 +239,13 @@ Horizontal tables
     <td>719.9 km²</td>
   </tr>
   <tr>
-    <td>Other information</td>
+    <td>Happy National Day!</td>
     <td><b>Ethnic groups</b> <br>74.3% Chinese <br>13.3% Malay <br> 9.1% Indian <br><br> <b>3.2% Others</b></td>
+    <td>Other information</td>
   </tr>
 </table>
 
-
-Vertical tables
+**Vertical tables**
 <table class="table-v">
   <tr>
     <td>Singapore population size</td>
@@ -213,27 +260,19 @@ Vertical tables
     <td><b>Ethnic groups</b> <br>74.3% Chinese <br>13.3% Malay <br> 9.1% Indian <br><br> <b>3.2% Others</b></td>
   </tr>
 </table>
-    
-More features and a bullet/subbullet list example:
-    
- * Ctrl+S / Cmd+S to download the current markdown on the page
- * Ctrl+Shift+S / Cmd+Shift+S to choose to save as Markdown or HTML
-   * Drag and drop a file into this page to load it
-   * File contents are saved in the URL so you can share easily
+
+---
 
 
-Here's how to create [a link](http://github.com); and here's how to access [files](https://isomerpages.github.io/isomerpages-template/assets/github-setup.pdf).
-
-Here's an [email link action](mailto:email@gmail.com)
-
-Open links in [a new tab](http://github.com){:target="_blank"}
-
-![Alternative text for screen readers](https://isomerpages.github.io/isomerpages-template/images/contact-us.png)
-
-    
+## **Help and support**
 This site's source is [on GitHub](https://github.com/isomerpages/markdown-editor) where you can [file issues or questions](https://github.com/isomerpages/markdown-editor/issues/new). 
 
+---
+
+
+## **Credits**
 This project was forked from the [Federalist team's repo](https://github.com/18F/markdown-editor) team, which was modified from James Taylor's original [code](https://github.com/jbt/markdown-editor).
+
 
 ---
 If you don't see two gray and white halves of the page, widen your browser window. Try making an edit on the left side, and good luck!
