@@ -147,35 +147,30 @@
 <body>
   <div id="in"><form>
     <textarea id="code">     
-# **Markdown Editor**
+## **Markdown Editor**
 - This will only work on your desktop browser, Chrome
 - This will not work on all iOS and Android mobile devices
-- If you don't see one gray and white halves of the page, try maximising your browser window
 - Paste your markdown here and start making edits on the left
-- Share your editor URL with your friends to share your markdown 
+- Share your editor URL with your friends to share your markdown
 
 ---
+#### **Section 1:  Font size for headers**
 
-### **Section 1:  Font size for headers**
-You can choose different font sizes for your header:
-##### Header Size 1
-#### Header Size 2
-### Header Size 3
-## Header Size 4
-# Header Size 5
+#### Small Header
+### Medium Header
+## Very Big Header
 
 ---
+#### **Section 2:  Formatting text**
 
-### **Section 2:  Formatting text**
-You can **bold** and *italicize* your text. And you can even *combine **both** in **the same** line*. 
+You can **bold** and *italicize* your text
 
-You can also ~~strikethrough~~ and add footers to your text <sup>[1]</sup> <sub>[2]</sub>
+You can also add footers to your text <sup>[1]</sup> <sub>[2]</sub>
 
 > Use blockquotes to make your text stand out
 
 ---
-
-### **Section 3: Formatting text with a list**
+#### **Section 3: Formatting text with a list**
 You can create bullet/subbullet list:
  * Item 1
  * Item 2
@@ -185,33 +180,29 @@ You can create bullet/subbullet list:
 Or, you can also create number list:
 1. Item A
 2. Item B
-3. Item C
-4. Item D
-5. Item E
 
 ---
-
-### **Section 4: Adding URL, file download link**
+#### **Section 4: Adding website URL**
 Here's how to create a [website link](http://github.com)
 
-Here's how to create a [website link](http://github.com){:target="_blank"} that open a new tab
-
-Here's how to create a [file download link]({{"/assets/github-setup.pdf" | absolute_url}})
+Here's how to create a [website link](http://github.com){:target="_blank"} that open a new window
 
 ---
-
-### **Section 5: Adding image**
-This is how you can add a image. Remember to change the image file path to your repo directory.
-![Alternative text for screen readers]({{"/images/contact-us.png" | absolute_url}})
+#### **Section 5: Adding download link**
+Here's how to create a [file download link](/files/github-setup.pdf)
 
 ---
-      
-### **Section 6: Adding Youtube video**
-This is how you add a youtube video:
-* Click on "Share" button on your video
-* Click on "Embeded" button 
-* Copy "iframe" embed content
-* Paste it between the "div"
+#### **Section 6: Adding image**
+This is how you can add a image. Remember to change the image file path
+![Alternative text for screen readers](/images/contact-us.png)
+
+---
+#### **Section 7: Adding Youtube video**
+This is how you add a Youtube video:
+1. Click on "Share" button on your Youtube video
+2. Click on "Embeded" button 
+3. Copy "iframe" embed content
+4. Paste it between the "div" tag
 
 This is a example how it looks like:
 <div class="bp-youtube">
@@ -219,8 +210,7 @@ This is a example how it looks like:
 </div>
 
 ---
-
-### **Section 7: Adding  table**
+#### **Section 8: Adding  a table**
 We recommend you to generate and paste your generated table over here by using the [table generator](https://www.tablesgenerator.com/html_tables){:target="_blank"}
 
 **Horizontal tables**
@@ -234,10 +224,6 @@ We recommend you to generate and paste your generated table over here by using t
     <td>Land mass of Singapore</td>
     <td>719.9 km²</td>
   </tr>
-  <tr>
-    <td><b>Ethnic groups</b> <br>74.3% Chinese <br>13.3% Malay <br> 9.1% Indian <br>3.2% Others</td>
-    <td>Other information</td>
-  </tr>
 </table>
 
 **Vertical tables**
@@ -250,23 +236,19 @@ We recommend you to generate and paste your generated table over here by using t
     <td>Land mass of Singapore</td>
     <td>719.9 km²</td>
   </tr>
-  <tr>
-    <td>Other information</td>
-    <td><b>Ethnic groups</b> <br>74.3% Chinese <br>13.3% Malay <br> 9.1% Indian <br> 3.2% Others </td>
-  </tr>
 </table>
 
 ---
-
-### **Help and support**
-This site's source is [on GitHub](https://github.com/isomerpages/markdown-editor) where you can [file issues or questions](https://github.com/isomerpages/markdown-editor/issues/new). 
+#### **Help and support**
+This site's source is on GitHub where you can [file issues or questions](https://github.com/isomerpages/markdown-editor/issues/new).
 
 ---
-
-### **Credits**
-This project was forked from the [Federalist team's repo](https://github.com/18F/markdown-editor) team, which was modified from James Taylor's original [code](https://github.com/jbt/markdown-editor).
-         
-    </textarea></form></div>
+#### **Credits**
+This project was forked from the [Federalist team's repo](https://github.com/18F/markdown-editor) team, which was modified from James Taylor's original [code](https://github.com/jbt/markdown-editor).  
+    
+    </textarea>
+    </form>
+  </div>
   <div id="out" class="content"></div>
   <div id="menu">
     <span>Save As</span>
